@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Gerador de Senhas</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de Senha</h1>
+        <table>
+            <tr>
+                <td>
+                <label  for="tamanho_senha">Número de Caracteres:</label>
+            </td>
+        </tr>
+        <tr>
+        <td>
+            <input  class="input-qntd-caracter" id="tamanho_caracteres" type="text">
+        </td>
+        </tr>
+        <tr>
+            <td>
+                <button class="gerar_senha" onClick= "gerar()">Gerar Senha</button>
+            </td>
+        </tr>
+        </table>
+    </div>
+
+    <script>
+        function gerar(){
+            const len_senha = document.getElementById('tamanho_caracteres').value;
+            pywebview.api.gerar_senha(len_senha).then(function(response){
+                alert("Senha Gerada: " + response)
+            })
+        }
+    </script>
+</body>
+</html>

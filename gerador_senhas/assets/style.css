@@ -1,0 +1,52 @@
+body{
+    background-image: linear-gradient(to right, #93bdda, #92288d);
+}
+
+h1{
+    font-family: 'Lucida Sans';
+    text-align: center;
+}
+
+
+table{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+tr{
+    font-family: 'Lucida Sans';
+    font-size: 25px;
+}
+
+.input-qntd-caracter {
+    border-radius: 6px;
+    border: 2px solid #333;
+    color: black;
+    height: 30px;
+    width: 115px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.gerar_senha{
+    margin-top: 10px;
+    border: 2px solid #333;
+    background-color: rgb(53, 2, 95);
+    color: white;
+    border-radius: 10px;
+    height: 60px;
+    width: 140px;
+    font-size: 20px;
+    cursor: pointer;
+    
+    
+}
+
+.gerar_senha:hover {
+    transition: 500ms linear;
+    background-color: rgb(125, 75, 240);
+    color: black;
+}
+
